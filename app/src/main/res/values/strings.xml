@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Clube Mogiano</string>
-    <string name="Menu">Menu</string>
+    <string name="social">Social</string>
+    <string name="eventos">Eventos</string>
+    <string name="esportes">Esportes</string>
+    <string name="serviços">Serviços</string>
+    <string name="notícias">Notícias</string>
 </resources>
