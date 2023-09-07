@@ -29,6 +29,9 @@ class StartScreenActivity : AppCompatActivity() {
         supportActionBar?.apply {
             title = "Clube Mogiano"
         }
+        binding.wellcomeText.text="bem vindo ao app"
+
+        showToast(context = this, message ="salve" )
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -51,15 +54,5 @@ class StartScreenActivity : AppCompatActivity() {
 
     fun showToast(context: Context, message: String) {
         Toast.makeText(context, message, Toast.LENGTH_SHORT).show()
-    }
-
-    class MainActivity : AppCompatActivity() {
-        override fun onCreate(savedInstanceState: Bundle?) {
-            super.onCreate(savedInstanceState)
-            setContentView(R.layout.activity_start_screen)
-
-            val textView = findViewById<TextView>(R.id.wellcomeText)
-            textView.text = "Bem vindo ao app"
-        }
     }
 }
