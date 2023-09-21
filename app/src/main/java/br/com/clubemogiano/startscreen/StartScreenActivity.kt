@@ -29,9 +29,6 @@ class StartScreenActivity : AppCompatActivity() {
         supportActionBar?.apply {
             title = "Clube Mogiano"
         }
-        binding.wellcomeText.text="bem vindo ao app"
-
-        showToast(context = this, message ="salve" )
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
