@@ -1,31 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
-    <TextView
-        android:id="@+id/wellcomeText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="" />
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/logotype"
-        android:layout_width="match_parent"
-        android:layout_height="290dp"
-        android:layout_marginTop="200dp"
-        app:srcCompat="@drawable/logotype" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/blue_toolbar"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/logotype"
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            android:layout_marginTop="60dp"
+            app:srcCompat="@drawable/logotype" />
+
+        <TextView
+            android:id="@+id/Explore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="50dp"
+            android:text="Explore as áreas do clube"
+            android:textAlignment="center"
+            android:textColor="@color/blue_clube"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/logotype"/>
+
+        <TextView
+            android:id="@+id/Introduction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="4dp"
+            android:text="Conheça os setores do Clube com as melhores opções de entretenimento, esportes e todos os serviços que estão a sua disposição. Acompanhe as notícias, aproveite para fazer seus agendamento e muito mais!"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/Explore"/>
+
+        <ImageButton
+            android:id="@+id/Social"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="50dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/social_desk"
+            android:layout_gravity="center"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageButton
+            android:id="@+id/Service"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="50dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"
+            android:src="@drawable/servicos_desk" />
+
+        <ImageButton
+            android:id="@+id/Sports"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="50dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"
+            android:src="@drawable/esporte_desk" />
 
 
+    </LinearLayout>
 
 
-</LinearLayout>
+</ScrollView>
 

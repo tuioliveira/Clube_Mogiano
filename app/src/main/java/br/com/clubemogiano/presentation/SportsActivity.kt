@@ -1,13 +1,13 @@
 package br.com.clubemogiano.presentation
 
-import br.com.clubemogiano.databinding.ActivityPresentationBinding
 import android.content.Context
+import br.com.clubemogiano.databinding.ActivitySportsBinding
 import android.widget.Toast
 
 
-class PresentationActivity {
+class SportsActivity {
 
-    private lateinit var binding: ActivityPresentationBinding
+    private lateinit var binding: ActivitySportsBinding
 
     fun showToast(context: Context, message: String) {
         Toast.makeText(context, message, Toast.LENGTH_SHORT).show()
