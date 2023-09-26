@@ -2,22 +2,25 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/item_social"
-        android:title="@string/social" />
+        android:id="@+id/item_nossa_historia"
+        android:title="@string/nossa_historia" />
 
     <item
-        android:id="@+id/item_eventos"
-        android:title="@string/eventos" />
+        android:id="@+id/item_institucional"
+        android:title="@string/institucional" />
 
     <item
-        android:id="@+id/item_esportes"
-        android:title="@string/esportes" />
+        android:id="@+id/item_locacao"
+        android:title="@string/locacao" />
 
     <item
-        android:id="@+id/item_serviços"
-        android:title="@string/serviços" />
+        android:id="@+id/item_galerias"
+        android:title="@string/galerias" />
 
     <item
         android:id="@+id/item_notícias"
         android:title="@string/notícias" />
+    <item
+        android:id="@+id/item_contato"
+        android:title="@string/contatos" />
 </menu>

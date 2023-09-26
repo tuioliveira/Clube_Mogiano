@@ -1,8 +1,9 @@
 <resources>
     <string name="app_name">Clube Mogiano</string>
-    <string name="social">Social</string>
-    <string name="eventos">Eventos</string>
-    <string name="esportes">Esportes</string>
-    <string name="serviços">Serviços</string>
+    <string name="nossa_historia">Nossa História</string>
+    <string name="institucional">Institucional</string>
+    <string name="locacao">Locação</string>
+    <string name="galerias">Galerias</string>
     <string name="notícias">Notícias</string>
+    <string name="contatos">Contatos</string>
 </resources>

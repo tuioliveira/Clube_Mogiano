@@ -8,8 +8,10 @@ import androidx.appcompat.app.AppCompatActivity
 import br.com.clubemogiano.R
 import br.com.clubemogiano.databinding.ActivityStartScreenBinding
 import android.content.Context
+import android.content.Intent
 import android.widget.Toast
 import android.widget.TextView
+import br.com.clubemogiano.sports.SportsActivity
 
 class StartScreenActivity : AppCompatActivity() {
     private lateinit var binding: ActivityStartScreenBinding
@@ -18,6 +20,7 @@ class StartScreenActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         init()
+
     }
 
     private fun init() {
@@ -28,6 +31,11 @@ class StartScreenActivity : AppCompatActivity() {
 
         supportActionBar?.apply {
             title = "Clube Mogiano"
+        }
+
+        binding.sportsButton.setOnClickListener{
+            val intent = Intent(this, SportsActivity::class.java)
+            startActivity(intent)
         }
     }
 
@@ -40,16 +48,31 @@ class StartScreenActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
-            R.id.item_social -> {
-                // Handle settings menu item click
+            R.id.item_nossa_historia -> {
                 true
             }
-            // Add more cases for other menu items
+
+            R.id.item_institucional -> {
+                true
+            }
+
+            R.id.item_locacao -> {
+                true
+            }
+
+            R.id.item_galerias -> {
+                true
+            }
+
+            R.id.item_notícias -> {
+                true
+            }
+
+            R.id.item_contato -> {
+                true
+            }
+
             else -> super.onOptionsItemSelected(item)
         }
-    }
-
-    fun showToast(context: Context, message: String) {
-        Toast.makeText(context, message, Toast.LENGTH_SHORT).show()
     }
 }

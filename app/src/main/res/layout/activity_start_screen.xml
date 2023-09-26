@@ -38,7 +38,7 @@
             android:textColor="@color/blue_clube"
             android:textSize="28sp"
             android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@id/logotype"/>
+            app:layout_constraintTop_toBottomOf="@id/logotype" />
 
         <TextView
             android:id="@+id/Introduction"
@@ -50,38 +50,69 @@
             android:text="Conheça os setores do Clube com as melhores opções de entretenimento, esportes e todos os serviços que estão a sua disposição. Acompanhe as notícias, aproveite para fazer seus agendamento e muito mais!"
             android:textAlignment="center"
             android:textSize="16sp"
-            app:layout_constraintTop_toBottomOf="@id/Explore"/>
+            app:layout_constraintTop_toBottomOf="@id/Explore" />
 
-        <ImageButton
+        <ImageView
             android:id="@+id/Social"
             android:layout_width="200dp"
             android:layout_height="200dp"
+            android:layout_gravity="center"
             android:layout_marginTop="50dp"
             android:scaleType="fitCenter"
             android:src="@drawable/social_desk"
-            android:layout_gravity="center"
             app:layout_constraintEnd_toEndOf="parent" />
 
-        <ImageButton
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/social_button"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/background_button"
+            android:text="SOCIAL"
+            android:textColor="@color/blue_clube" />
+
+        <ImageView
             android:id="@+id/Service"
             android:layout_width="200dp"
             android:layout_height="200dp"
+            android:layout_gravity="center"
             android:layout_marginTop="50dp"
             android:scaleType="fitCenter"
-            android:layout_gravity="center"
             android:src="@drawable/servicos_desk" />
 
-        <ImageButton
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/service_button"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/background_button"
+            android:text="SERVIÇOS"
+            android:textColor="@color/blue_clube" />
+
+        <ImageView
             android:id="@+id/Sports"
             android:layout_width="200dp"
             android:layout_height="200dp"
+            android:layout_gravity="center"
             android:layout_marginTop="50dp"
             android:scaleType="fitCenter"
-            android:layout_gravity="center"
             android:src="@drawable/esporte_desk" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/sports_button"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/background_button"
+            android:text="ESPORTES"
+            android:textColor="@color/blue_clube" />
 
 
     </LinearLayout>
+
 
 
 </ScrollView>
