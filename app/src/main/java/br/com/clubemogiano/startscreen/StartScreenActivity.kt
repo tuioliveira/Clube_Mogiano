@@ -27,7 +27,7 @@ class StartScreenActivity : AppCompatActivity() {
         binding = ActivityStartScreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setSupportActionBar(binding.toolbar)
+        setSupportActionBar(binding.toolbarStart)
 
         supportActionBar?.apply {
             title = "Clube Mogiano"

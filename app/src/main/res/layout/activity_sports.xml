@@ -5,38 +5,35 @@
     android:orientation="vertical">
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginRight="50dp"
-        android:text="Esportes"
-        android:textAlignment="center"
-        android:textSize="65sp"
-        android:textStyle="bold" />
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_sports"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/blue_toolbar"
+        android:elevation="2dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginLeft="50dp"
         android:layout_marginTop="30dp"
-        android:layout_marginRight="50dp"
         android:text="A área de Esportes do Clube Mogiano promove saúde e bem estar!"
         android:textAlignment="center"
         android:textSize="20sp"
+        android:textColor="@color/blue_clube"
         android:textStyle="bold" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginRight="50dp"
-        android:text="Todos sabemos que praticar esportes é importante para a saúde e bem-estar e, é pensando nisso que o Clube Mogiano empresa mais de 130 funcionários, com professores e monitores capacitados, oferecendo a estrutura necessária para a prática de várias modalidades esportivas. Quando se observa, por exemplo, a movimentação nas aulas de natação ou mesmo a agitação da sala de musculação, se tem a noção da grandiosidade dessa estrutura que, é utilizada até por atletas de nível internacional. Essa é a realidade do Clube Mogiano, um clube voltado extremamente para o conforto e o bem-estar dos associados."
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="O Clube Mogiano emprega mais de 130 funcionários, incluindo professores e monitores qualificados, para oferecer uma ampla variedade de atividades esportivas."
         android:textAlignment="center"
+        android:textColor="@color/black"
         android:textSize="12sp" />
 </LinearLayout>
 
