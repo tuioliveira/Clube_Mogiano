@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_services"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/blue_toolbar"
+            android:elevation="2dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="A área de Esportes do Clube Mogiano oferece alimentação e socialização!"
+            android:textAlignment="center"
+            android:textColor="@color/blue_clube"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Restaurante: Contamos com um restaurante dentro da sede social do nosso clube, onde atendemos nossos associados as quintas-feiras na especial Noite do Boteco, e nos almoços de finais de semana. Lanchonete / Bar : Junto ao restaurante possuimos uma lanchonete, onde servimos algumas refeições como salgados, porções, pratos feitos e também bebidas como refrigerantes, águas, cervejas e drinks."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </LinearLayout>
+</ScrollView>

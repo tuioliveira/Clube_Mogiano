@@ -1,16 +1,14 @@
 package br.com.clubemogiano.startscreen
 
-import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import br.com.clubemogiano.R
 import br.com.clubemogiano.databinding.ActivityStartScreenBinding
-import android.content.Context
 import android.content.Intent
-import android.widget.Toast
-import android.widget.TextView
+import br.com.clubemogiano.services.ServicesActivity
+import br.com.clubemogiano.social.SocialActivity
 import br.com.clubemogiano.sports.SportsActivity
 
 class StartScreenActivity : AppCompatActivity() {
@@ -35,6 +33,14 @@ class StartScreenActivity : AppCompatActivity() {
 
         binding.sportsButton.setOnClickListener{
             val intent = Intent(this, SportsActivity::class.java)
+            startActivity(intent)
+        }
+        binding.socialButton.setOnClickListener{
+            val intent = Intent(this, SocialActivity::class.java)
+            startActivity(intent)
+        }
+        binding.servicesButton.setOnClickListener{
+            val intent = Intent(this, ServicesActivity::class.java)
             startActivity(intent)
         }
     }

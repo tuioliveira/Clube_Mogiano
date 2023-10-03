@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_social"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/blue_toolbar"
+        android:elevation="2dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="A área Social do Clube Mogiano traz para você diversas opções de entretenimento!"
+        android:textAlignment="center"
+        android:textColor="@color/blue_clube"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Algumas de nossas festas e eventos tradicionais:• Baile de Carnaval • Festa Julina • Festa Italiana • Festa Alemã • Baile do Havaí • Festa a Fantasia • Dia das Mães • Dia dos Pais • Dia das Crianças • Aniversário do Clube Mogiano • Reveillon • Sexta Dançante"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+    </LinearLayout>
+</ScrollView>

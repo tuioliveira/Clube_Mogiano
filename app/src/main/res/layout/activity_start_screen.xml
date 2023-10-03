@@ -73,7 +73,7 @@
             android:textColor="@color/blue_clube" />
 
         <ImageView
-            android:id="@+id/Service"
+            android:id="@+id/Services"
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_gravity="center"
@@ -82,7 +82,7 @@
             android:src="@drawable/servicos_desk" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/service_button"
+            android:id="@+id/services_button"
             android:layout_width="100dp"
             android:layout_height="30dp"
             android:layout_gravity="center"

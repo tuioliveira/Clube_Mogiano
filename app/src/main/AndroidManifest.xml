@@ -26,6 +26,12 @@
         <activity
             android:name=".sports.SportsActivity"
             android:exported="true" />
+        <activity
+            android:name=".social.SocialActivity"
+            android:exported="true" />
+        <activity
+            android:name=".services.ServicesActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
