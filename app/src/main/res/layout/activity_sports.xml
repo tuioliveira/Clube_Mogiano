@@ -7,7 +7,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
 
@@ -52,7 +52,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginTop="50dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/icone_academia" />
 
@@ -61,7 +61,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginTop="50dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/icone_atletismo" />
 
@@ -70,7 +70,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginTop="50dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/icone_ballet" />
 
@@ -86,7 +86,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginTop="50dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/icone_basquete" />
 
@@ -95,7 +95,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginTop="50dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/icone_beach_tennis" />
 
@@ -104,7 +104,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginTop="50dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/icone_fitness" />
 
@@ -120,7 +120,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginTop="50dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/icone_futebol" />
 
@@ -129,7 +129,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginTop="50dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/icone_ginastica" />
 
@@ -138,7 +138,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginTop="50dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/icone_handebol" />
 
@@ -154,7 +154,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginTop="50dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/icone_hidroginastica" />
 
@@ -163,7 +163,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginTop="50dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/icone_jazz" />
 
@@ -172,7 +172,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginTop="50dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/icone_jiu_jitsu" />
 
@@ -188,7 +188,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginTop="50dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/icone_lian_gong" />
 
@@ -197,7 +197,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginTop="50dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/icone_natacao" />
 
@@ -206,7 +206,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginTop="50dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/icone_skate" />
 
@@ -222,7 +222,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginTop="50dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/icone_tennis_de_campo" />
 
@@ -231,7 +231,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginTop="50dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/icone_tennis_de_mesa" />
 
@@ -240,7 +240,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginTop="50dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/icone_volei" />
 
@@ -256,7 +256,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginTop="50dp"
-                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/icone_yoga" />
 
