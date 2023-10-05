@@ -6,4 +6,36 @@
     <string name="galerias">Galerias</string>
     <string name="notícias">Notícias</string>
     <string name="contatos">Contatos</string>
+
+    <string name="sports_button">ESPORTES</string>
+    <string name="service_button">SERVIÇOS</string>
+    <string name="social_button">SOCIAL</string>
+
+    <string name="introducion_text">Conheça os setores do Clube com as melhores opções de entretenimento, esportes e todos os serviços que estão a sua disposição. Acompanhe as notícias, aproveite para fazer seus agendamento e muito mais!</string>
+    <string name="explore_text">Explore as áreas do clube</string>
+
+    <string name="sports_introducion">A área de Esportes do Clube Mogiano promove saúde e bem estar!</string>
+    <string name="sports_introducion2">O Clube Mogiano emprega mais de 130 funcionários, incluindo professores e monitores qualificados, para oferecer uma ampla variedade de atividades esportivas.</string>
+
+
+    <string name="ballet_button">Ballet</string>
+    <string name="atletismo_button">Atletismo</string>
+    <string name="academia_button">Academia</string>
+    <string name="basquete_button">Basquete</string>
+    <string name="beach_tennis_button">Beach Tennis</string>
+    <string name="fitness_button">Fitness</string>
+    <string name="futebol_button">Futebol</string>
+    <string name="ginastica_button">Ginástica</string>
+    <string name="handebol_button">Handebol</string>
+    <string name="hidroginastica_button">Hidroginastica</string>
+    <string name="jazz_button">Jazz</string>
+    <string name="jiujitsu_button">Jiu Jitsu</string>
+    <string name="liangong_button">Lian Gong</string>
+    <string name="natacao_button">Natação</string>
+    <string name="skate_button">Skate</string>
+    <string name="tenniscampo_button">Tennis Campo</string>
+    <string name="tenismesa_button">Tennis Mesa</string>
+    <string name="volei_button">Vôlei</string>
+    <string name="yoga_button">Yoga</string>
+
 </resources>

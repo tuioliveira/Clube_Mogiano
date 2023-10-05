@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -14,30 +15,32 @@
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar_sports"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="?attr/actionBarSize"
             android:background="@color/blue_toolbar"
-            android:elevation="2dp"
+            android:elevation="4dp"
             android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
 
 
         <TextView
+            android:id="@+id/sports_introducion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
-            android:text="A área de Esportes do Clube Mogiano promove saúde e bem estar!"
+            android:text="@string/sports_introducion"
             android:textAlignment="center"
             android:textColor="@color/blue_clube"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/sports_introducion2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
-            android:text="O Clube Mogiano emprega mais de 130 funcionários, incluindo professores e monitores qualificados, para oferecer uma ampla variedade de atividades esportivas."
+            android:text="@string/sports_introducion2"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="12sp" />
@@ -51,8 +54,8 @@
                 android:id="@+id/Academia"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:layout_marginTop="50dp"
                 android:layout_marginStart="25dp"
+                android:layout_marginTop="50dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/icone_academia" />
 
@@ -60,8 +63,8 @@
                 android:id="@+id/Atletismo"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:layout_marginTop="50dp"
                 android:layout_marginStart="25dp"
+                android:layout_marginTop="50dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/icone_atletismo" />
 
@@ -69,10 +72,56 @@
                 android:id="@+id/Ballet"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:layout_marginTop="50dp"
                 android:layout_marginStart="25dp"
+                android:layout_marginTop="50dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/icone_ballet" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/academia_button"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/background_button_sports"
+                android:text="@string/academia_button"
+                android:textColor="@color/blue_clube"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/atletismo_button"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/background_button_sports"
+                android:text="@string/atletismo_button"
+                android:textColor="@color/blue_clube"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ballet_button"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/background_button_sports"
+                android:text="@string/ballet_button"
+                android:textColor="@color/blue_clube"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
 
         </LinearLayout>
 
@@ -85,8 +134,8 @@
                 android:id="@+id/Basquete"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:layout_marginTop="50dp"
                 android:layout_marginStart="25dp"
+                android:layout_marginTop="50dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/icone_basquete" />
 
@@ -94,8 +143,8 @@
                 android:id="@+id/Beach_tennis"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:layout_marginTop="50dp"
                 android:layout_marginStart="25dp"
+                android:layout_marginTop="50dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/icone_beach_tennis" />
 
@@ -103,10 +152,56 @@
                 android:id="@+id/Fitness"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:layout_marginTop="50dp"
                 android:layout_marginStart="25dp"
+                android:layout_marginTop="50dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/icone_fitness" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/basquete_button"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/background_button_sports"
+                android:text="@string/basquete_button"
+                android:textColor="@color/blue_clube"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/beach_tennis_button"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/background_button_sports"
+                android:text="@string/beach_tennis_button"
+                android:textColor="@color/blue_clube"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/fitness_button"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/background_button_sports"
+                android:text="@string/fitness_button"
+                android:textColor="@color/blue_clube"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
 
         </LinearLayout>
 
@@ -119,8 +214,8 @@
                 android:id="@+id/Futebol"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:layout_marginTop="50dp"
                 android:layout_marginStart="25dp"
+                android:layout_marginTop="50dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/icone_futebol" />
 
@@ -128,8 +223,8 @@
                 android:id="@+id/Ginastica"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:layout_marginTop="50dp"
                 android:layout_marginStart="25dp"
+                android:layout_marginTop="50dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/icone_ginastica" />
 
@@ -137,10 +232,56 @@
                 android:id="@+id/Handebol"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:layout_marginTop="50dp"
                 android:layout_marginStart="25dp"
+                android:layout_marginTop="50dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/icone_handebol" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/futebol_button"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/background_button_sports"
+                android:text="@string/futebol_button"
+                android:textColor="@color/blue_clube"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ginastica_button"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/background_button_sports"
+                android:text="@string/ginastica_button"
+                android:textColor="@color/blue_clube"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/handebol_button"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/background_button_sports"
+                android:text="@string/handebol_button"
+                android:textColor="@color/blue_clube"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
 
         </LinearLayout>
 
@@ -153,8 +294,8 @@
                 android:id="@+id/Hidroginastica"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:layout_marginTop="50dp"
                 android:layout_marginStart="25dp"
+                android:layout_marginTop="50dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/icone_hidroginastica" />
 
@@ -162,8 +303,8 @@
                 android:id="@+id/Jazz"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:layout_marginTop="50dp"
                 android:layout_marginStart="25dp"
+                android:layout_marginTop="50dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/icone_jazz" />
 
@@ -171,10 +312,56 @@
                 android:id="@+id/JiuJitsu"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:layout_marginTop="50dp"
                 android:layout_marginStart="25dp"
+                android:layout_marginTop="50dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/icone_jiu_jitsu" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/hidroginastica_button"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/background_button_sports"
+                android:text="@string/hidroginastica_button"
+                android:textColor="@color/blue_clube"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/jazz_button"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/background_button_sports"
+                android:text="@string/jazz_button"
+                android:textColor="@color/blue_clube"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/jiujitsu_button"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/background_button_sports"
+                android:text="@string/jiujitsu_button"
+                android:textColor="@color/blue_clube"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
 
         </LinearLayout>
 
@@ -187,8 +374,8 @@
                 android:id="@+id/LianGong"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:layout_marginTop="50dp"
                 android:layout_marginStart="25dp"
+                android:layout_marginTop="50dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/icone_lian_gong" />
 
@@ -196,8 +383,8 @@
                 android:id="@+id/Natação"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:layout_marginTop="50dp"
                 android:layout_marginStart="25dp"
+                android:layout_marginTop="50dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/icone_natacao" />
 
@@ -205,8 +392,8 @@
                 android:id="@+id/Skate"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:layout_marginTop="50dp"
                 android:layout_marginStart="25dp"
+                android:layout_marginTop="50dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/icone_skate" />
 
@@ -217,21 +404,67 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/liangong_button"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/background_button_sports"
+                android:text="@string/liangong_button"
+                android:textColor="@color/blue_clube"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/natacao_button"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/background_button_sports"
+                android:text="@string/natacao_button"
+                android:textColor="@color/blue_clube"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/skate_button"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/background_button_sports"
+                android:text="@string/skate_button"
+                android:textColor="@color/blue_clube"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
             <ImageView
-                android:id="@+id/TennisCampo"
+                android:id="@+id/TenisCampo"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:layout_marginTop="50dp"
                 android:layout_marginStart="25dp"
+                android:layout_marginTop="50dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/icone_tennis_de_campo" />
 
             <ImageView
-                android:id="@+id/TennisMesa"
+                android:id="@+id/TenisMesa"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:layout_marginTop="50dp"
                 android:layout_marginStart="25dp"
+                android:layout_marginTop="50dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/icone_tennis_de_mesa" />
 
@@ -239,10 +472,56 @@
                 android:id="@+id/Volei"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:layout_marginTop="50dp"
                 android:layout_marginStart="25dp"
+                android:layout_marginTop="50dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/icone_volei" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/teniscampo_button"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/background_button_sports"
+                android:text="@string/tenniscampo_button"
+                android:textColor="@color/blue_clube"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/tenismesa_button"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/background_button_sports"
+                android:text="@string/tenismesa_button"
+                android:textColor="@color/blue_clube"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/volei_button"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/background_button_sports"
+                android:text="@string/volei_button"
+                android:textColor="@color/blue_clube"
+                android:textSize="10sp"
+                tools:ignore="SmallSp" />
 
         </LinearLayout>
 
@@ -255,11 +534,24 @@
                 android:id="@+id/Yoga"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:layout_marginTop="50dp"
                 android:layout_marginStart="25dp"
+                android:layout_marginTop="50dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/icone_yoga" />
 
         </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/yoga_button"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/background_button_sports"
+            android:text="@string/yoga_button"
+            android:textColor="@color/blue_clube"
+            android:textSize="10sp"
+            tools:ignore="SmallSp" />
+
     </LinearLayout>
 </ScrollView>
