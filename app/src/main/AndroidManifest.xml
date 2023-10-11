@@ -35,6 +35,9 @@
         <activity
             android:name=".services.ServicesActivity"
             android:exported="true" />
+        <activity
+            android:name=".academia.AcademiaActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
