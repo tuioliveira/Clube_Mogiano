@@ -1,109 +1,175 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <LinearLayout
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_start"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/blue_toolbar"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar_start"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="@color/blue_toolbar"
-            android:elevation="4dp"
-            android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
 
-        <TextView
-            android:id="@+id/Explore"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="50dp"
-            android:layout_marginTop="80dp"
-            android:layout_marginRight="50dp"
-            android:text="@string/explore_text"
-            android:textAlignment="center"
-            android:textColor="@color/blue_clube"
-            android:textSize="28sp"
-            android:textStyle="bold"
-            app:layout_constraintTop_toBottomOf="@id/toolbar_start" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_start"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/Introduction"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="4dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="4dp"
-            android:text="@string/introducion_text"
-            android:textAlignment="center"
-            android:textSize="16sp"
-            app:layout_constraintTop_toBottomOf="@id/Explore" />
+            android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/Social"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="50dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/social_desk"
-            app:layout_constraintEnd_toEndOf="parent" />
+            <TextView
+                android:id="@+id/Destaques"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:text="@string/destaques_text"
+                android:textColor="@color/blue_clube"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/toolbar_start"/>
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/social_button"
-            android:layout_width="100dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/background_button"
-            android:text="@string/social_button"
-            android:textColor="@color/blue_clube" />
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
 
-        <ImageView
-            android:id="@+id/Services"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="50dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/servicos_desk" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/services_button"
-            android:layout_width="100dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/background_button"
-            android:text="@string/service_button"
-            android:textColor="@color/blue_clube" />
+                    <ImageView
+                        android:id="@+id/destaque1"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/destaques1" />
 
-        <ImageView
-            android:id="@+id/Sports"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="50dp"
-            android:scaleType="fitCenter"
-            android:src="@drawable/esporte_desk" />
+                    <ImageView
+                        android:id="@+id/destaque2"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/destaques2" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/sports_button"
-            android:layout_width="100dp"
-            android:layout_height="30dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/background_button"
-            android:text="@string/sports_button"
-            android:textColor="@color/blue_clube" />
+                    <ImageView
+                        android:id="@+id/destaque3"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/destaques3" />
 
 
-    </LinearLayout>
-</ScrollView>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+            <TextView
+                android:id="@+id/Explore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="50dp"
+                android:text="@string/explore_text"
+                android:textAlignment="center"
+                android:textColor="@color/blue_clube"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/toolbar_start" />
+
+            <TextView
+                android:id="@+id/Introduction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="4dp"
+                android:text="@string/introducion_text"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/Explore" />
+
+            <ImageView
+                android:id="@+id/Social"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/social_desk"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/social_button"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/background_button"
+                android:text="@string/social_button"
+                android:textColor="@color/blue_clube" />
+
+            <ImageView
+                android:id="@+id/Services"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/servicos_desk" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/services_button"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/background_button"
+                android:text="@string/service_button"
+                android:textColor="@color/blue_clube" />
+
+            <ImageView
+                android:id="@+id/Sports"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/esporte_desk" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/sports_button"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/background_button"
+                android:text="@string/sports_button"
+                android:textColor="@color/blue_clube" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
 
