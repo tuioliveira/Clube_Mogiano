@@ -35,6 +35,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="100dp"
+                android:layout_marginStart="24dp"
                 android:text="@string/destaques_text"
                 android:textColor="@color/blue_clube"
                 android:textSize="28sp"
@@ -167,6 +168,14 @@
                 android:background="@drawable/background_button"
                 android:text="@string/sports_button"
                 android:textColor="@color/blue_clube" />
+
+            <ImageView
+                android:id="@+id/Contatos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/contato"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
 
 
         </LinearLayout>
