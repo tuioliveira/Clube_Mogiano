@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange_edge">
+
+    <ImageView
+        android:id="@+id/logotype"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logobranco"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/text_contato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONTATO"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logotype" />
+
+    <ImageView
+        android:id="@+id/icone_localizacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/localizacao"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_contato" />
+
+    <TextView
+        android:id="@+id/localizacao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Localizacao"
+        android:textColor="@color/white"
+        android:layout_marginStart="10dp"
+        app:layout_constraintTop_toTopOf="@+id/icone_localizacao"
+        app:layout_constraintStart_toEndOf="@+id/icone_localizacao"
+        app:layout_constraintBottom_toBottomOf="@+id/icone_localizacao"/>
+
+    <ImageView
+        android:id="@+id/icone_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/email"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_contato" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Email"
+        android:textColor="@color/white"
+        android:layout_marginStart="10dp"
+        app:layout_constraintTop_toTopOf="@+id/icone_email"
+        app:layout_constraintStart_toEndOf="@+id/icone_email"
+        app:layout_constraintBottom_toBottomOf="@+id/icone_email"/>
+
+    <ImageView
+        android:id="@+id/icone_telefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/telefone"
+        android:layout_marginTop="160dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_contato" />
+
+    <TextView
+        android:id="@+id/telefone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Telefone"
+        android:textColor="@color/white"
+        android:layout_marginStart="10dp"
+        app:layout_constraintTop_toTopOf="@+id/icone_telefone"
+        app:layout_constraintStart_toEndOf="@+id/icone_telefone"
+        app:layout_constraintBottom_toBottomOf="@+id/icone_telefone"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
