@@ -47,7 +47,7 @@ class StartScreenActivity : AppCompatActivity() {
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
 
-        menuInflater.inflate(R.menu.menu_start, menu);
+        menuInflater.inflate(R.menu.menu_start, menu)
 
         return super.onCreateOptionsMenu(menu)
     }

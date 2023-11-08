@@ -3,11 +3,12 @@ package br.com.clubemogiano.sports
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
-import br.com.clubemogiano.databinding.ActivityAcademiaBinding
+import br.com.clubemogiano.databinding.ActivityAtletismoBinding
 
 
-class AcademiaActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityAcademiaBinding
+class AtletismoActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityAtletismoBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -17,13 +18,13 @@ class AcademiaActivity : AppCompatActivity() {
 
     private fun init() {
 
-        binding = ActivityAcademiaBinding.inflate(layoutInflater)
+        binding = ActivityAtletismoBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setSupportActionBar(binding.toolbarAcademia)
+        setSupportActionBar(binding.toolbarAtletismo)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.apply {
-            title = "Academia"
+            title = "Atletismo"
         }
     }
 

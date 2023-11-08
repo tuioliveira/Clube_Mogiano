@@ -36,7 +36,10 @@
             android:name=".services.ServicesActivity"
             android:exported="true" />
         <activity
-            android:name=".academia.AcademiaActivity"
+            android:name=".sports.AcademiaActivity"
+            android:exported="true" />
+        <activity
+            android:name=".sports.AtletismoActivity"
             android:exported="true" />
     </application>
 

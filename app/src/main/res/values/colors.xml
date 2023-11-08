@@ -10,4 +10,7 @@
     <color name="blue_clube">#001781</color>
     <color name="blue_toolbar">#009cde</color>
     <color name="orange_edge">#f58220</color>
+    <color name="blue_table_top">#002191</color>
+    <color name="gray_table">#e7e7e7</color>
+    <color name="gray_line">#d9dce5</color>
 </resources>

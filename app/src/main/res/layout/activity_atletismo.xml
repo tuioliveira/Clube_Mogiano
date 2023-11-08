@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_atletismo"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/blue_toolbar"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="80dp">
+
+            <TableRow
+                android:layout_height="60dp"
+                android:background="@color/blue_table_top">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/fundo_da_tabela"
+                    android:padding="10dp"
+                    android:text="DIA \nDA SEMANA"
+                    android:textColor="@color/orange_edge" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/fundo_da_tabela"
+                    android:padding="10dp"
+                    android:text="PERIODO \nDA MANHÃ"
+                    android:textColor="@color/orange_edge" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/fundo_da_tabela"
+                    android:padding="10dp"
+                    android:text="PERIODO \nDA TARDE"
+                    android:textColor="@color/orange_edge" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/fundo_da_tabela"
+                    android:padding="10dp"
+                    android:text="PERIODO \nDA NOITE"
+                    android:textColor="@color/orange_edge" />
+            </TableRow>
+
+            <TableRow android:background="@color/gray_table">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/fundo_da_tabela"
+                    android:hyphenationFrequency="normal"
+                    android:padding="10dp"
+                    android:text="Segunda-feira"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/fundo_da_tabela"
+                    android:hyphenationFrequency="normal"
+                    android:padding="10dp"
+                    android:text="06:15 - ADULTO (PISTA ATLETISMO) A PARTIR DOS 16 ANOS.07:30 - ADULTO (PISTA ATLETISMO) A PARTIR DOS 16 ANOS."
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/fundo_da_tabela"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/fundo_da_tabela"
+                    android:padding="10dp"
+                    android:hyphenationFrequency="normal"
+                    android:textSize="10sp"
+                    android:text="18:30 - ADULTO (PISTA ATLETISMO) A PARTIR DOS 16 ANOS" />
+            </TableRow>
+
+            <TableRow android:background="@color/gray_table">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/fundo_da_tabela"
+                    android:hyphenationFrequency="normal"
+                    android:padding="10dp"
+                    android:text="Terça-feira"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/fundo_da_tabela"
+                    android:padding="10dp"
+                    android:text="06:15 - ADULTO (PISTA ATLETISMO) A PARTIR DOS 16 ANOS. 07:30 - ADULTO (PISTA ATLETISMO) A PARTIR DOS 16 ANOS 08:50 - INFANTIL DE 7 A 15 ANOS (PISTA TLETISMO)"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/fundo_da_tabela"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/fundo_da_tabela"
+                    android:padding="10dp" />
+            </TableRow>
+
+            <TableRow android:background="@color/gray_table">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/fundo_da_tabela"
+                    android:hyphenationFrequency="normal"
+                    android:padding="10dp"
+                    android:text="Quarta-feira"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/fundo_da_tabela"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/fundo_da_tabela"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/fundo_da_tabela"
+                    android:padding="10dp"
+                    android:hyphenationFrequency="normal"
+                    android:textSize="10sp"
+                    android:text="18:30 - ADULTO (PISTA ATLETISMO)A PARTIR DOS 16 ANOS" />
+            </TableRow>
+
+            <TableRow android:background="@color/gray_table">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/fundo_da_tabela"
+                    android:hyphenationFrequency="normal"
+                    android:padding="10dp"
+                    android:text="Quinta-feira"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/fundo_da_tabela"
+                    android:hyphenationFrequency="normal"
+                    android:padding="10dp"
+                    android:text="06:15 - ADULTO (PISTA ATLETISMO) A PARTIR DOS 16 ANOS. 07:30 - ADULTO (PISTA ATLETISMO) A PARTIR DOS 16 ANOS 08:50 - INFANTIL DE 7 A 15 ANOS (PISTA ATLETISMO)"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/fundo_da_tabela"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/fundo_da_tabela"
+                    android:padding="10dp"
+                    android:hyphenationFrequency="normal"
+                    android:textSize="10sp"
+                    android:text="18:30 - ADULTO (PISTA ATLETISMO)A PARTIR DOS 16 ANOS" />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+</ScrollView>
