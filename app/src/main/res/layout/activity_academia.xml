@@ -18,5 +18,138 @@
             android:elevation="4dp"
             android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
 
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="80dp">
+
+            <TableRow
+                android:layout_height="60dp"
+                android:background="@color/blue_table_top">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/fundo_da_tabela"
+                    android:padding="10dp"
+                    android:text="Segunda-Feira"
+                    android:textColor="@color/orange_edge" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/fundo_da_tabela"
+                    android:padding="10dp"
+                    android:text="Terça-Feira"
+                    android:textColor="@color/orange_edge" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/fundo_da_tabela"
+                    android:padding="10dp"
+                    android:text="Quarta-feira"
+                    android:textColor="@color/orange_edge" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/fundo_da_tabela"
+                    android:padding="10dp"
+                    android:text="Quinta-feira"
+                    android:textColor="@color/orange_edge" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/fundo_da_tabela"
+                    android:padding="10dp"
+                    android:text="Secta-feira"
+                    android:textColor="@color/orange_edge" />
+
+            </TableRow>
+            <TableRow android:background="@color/gray_table">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/fundo_da_tabela"
+                    android:hyphenationFrequency="normal"
+                    android:padding="10dp"
+                    android:text="Período da manhã"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/fundo_da_tabela"
+                    android:hyphenationFrequency="normal"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textSize="10sp" />
+
+
+            </TableRow>
+
+            <TableRow android:background="@color/gray_table">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/fundo_da_tabela"
+                    android:hyphenationFrequency="normal"
+                    android:padding="10dp"
+                    android:text="Período da Tarde"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/fundo_da_tabela"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textSize="10sp" />
+
+            </TableRow>
+
+            <TableRow android:background="@color/gray_table">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/fundo_da_tabela"
+                    android:hyphenationFrequency="normal"
+                    android:padding="10dp"
+                    android:text="Período da Noite"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/fundo_da_tabela"
+                    android:padding="10dp"
+                    android:hyphenationFrequency="normal"
+                    android:textSize="10sp"
+                    android:text="" />
+            </TableRow>
+
+
+
+        </TableLayout>
+
     </LinearLayout>
 </ScrollView>
