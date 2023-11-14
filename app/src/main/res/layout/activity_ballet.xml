@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -12,7 +11,7 @@
         android:orientation="vertical">
 
         <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar_academia"
+            android:id="@+id/toolbar_ballet"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="@color/blue_toolbar"
@@ -32,6 +31,7 @@
                 android:background="@color/blue_table_top">
 
                 <TextView
+                    android:id="@+id/segundaFeira"
                     android:layout_width="1dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -39,9 +39,11 @@
                     android:hyphenationFrequency="normal"
                     android:padding="10dp"
                     android:text="Segunda-Feira"
-                    android:textColor="@color/orange_edge" />
+                    android:textColor="@color/orange_edge"
+                    android:clickable="true"/>
 
                 <TextView
+                    android:id="@+id/tercaFeira"
                     android:layout_width="1dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -49,9 +51,11 @@
                     android:hyphenationFrequency="normal"
                     android:padding="10dp"
                     android:text="Terça-Feira"
-                    android:textColor="@color/orange_edge" />
+                    android:textColor="@color/orange_edge"
+                    android:clickable="true"/>
 
                 <TextView
+                    android:id="@+id/quartaFeira"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -59,9 +63,11 @@
                     android:hyphenationFrequency="normal"
                     android:padding="10dp"
                     android:text="Quarta-feira"
-                    android:textColor="@color/orange_edge" />
+                    android:textColor="@color/orange_edge"
+                    android:clickable="true"/>
 
                 <TextView
+                    android:id="@+id/quintaFeira"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -69,9 +75,11 @@
                     android:hyphenationFrequency="normal"
                     android:padding="10dp"
                     android:text="Quinta-feira"
-                    android:textColor="@color/orange_edge" />
+                    android:textColor="@color/orange_edge"
+                    android:clickable="true"/>
 
                 <TextView
+                    android:id="@+id/sextaFeira"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -79,11 +87,14 @@
                     android:hyphenationFrequency="normal"
                     android:padding="10dp"
                     android:text="Sexta-feira"
-                    android:textColor="@color/orange_edge" />
+                    android:textColor="@color/orange_edge"
+                    android:clickable="true"/>
 
             </TableRow>
 
-            <TableRow android:background="@color/gray_table">
+            <TableRow
+                android:id="@+id/periodoDaManha"
+                android:background="@color/gray_table">
 
                 <TextView
                     android:layout_width="0dp"
@@ -92,23 +103,26 @@
                     android:background="@drawable/fundo_da_tabela"
                     android:hyphenationFrequency="normal"
                     android:padding="10dp"
-                    android:text="Período da manhã"
+                    android:text="Período da Manhã"
                     android:textColor="@color/black" />
 
                 <TextView
+                    android:id="@+id/periodoDaManhaValue"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@drawable/fundo_da_tabela"
                     android:hyphenationFrequency="normal"
                     android:padding="10dp"
-                    android:text=""
+                    android:text="09:00 - 05 ANOS [SALA 02]de 5 a 5 anos.\n10:00 - 04 e 05 ANOS [SALA 02] de 4 a 5 anos."
                     android:textSize="10sp" />
 
 
             </TableRow>
 
-            <TableRow android:background="@color/gray_table">
+            <TableRow
+                android:id="@+id/periodoDaTarde"
+                android:background="@color/gray_table">
 
                 <TextView
                     android:layout_width="0dp"
@@ -121,17 +135,20 @@
                     android:textColor="@color/black" />
 
                 <TextView
+                    android:id="@+id/periodoDaTardeValue"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@drawable/fundo_da_tabela"
                     android:padding="10dp"
-                    android:text=""
+                    android:text="15:00 - 4º A 6º ANO ESCOLAR [SALA 02] \n15:00 - 4º A 6º ANO ESCOLAR [SALA 02]"
                     android:textSize="10sp" />
 
             </TableRow>
 
-            <TableRow android:background="@color/gray_table">
+            <TableRow
+                android:id="@+id/periodoDaNoite"
+                android:background="@color/gray_table">
 
                 <TextView
                     android:layout_width="0dp"
@@ -144,18 +161,25 @@
                     android:textColor="@color/black" />
 
                 <TextView
+                    android:id="@+id/periodoDaNoiteValue"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@drawable/fundo_da_tabela"
                     android:hyphenationFrequency="normal"
                     android:padding="10dp"
-                    android:text=""
+                    android:text="[MATRICULA COM O PROFESSOR] \n18:00 - BALLET AVANÇADO [SALA 02]"
                     android:textSize="10sp" />
             </TableRow>
 
 
         </TableLayout>
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/grupoTabela"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="periodoDaManha, periodoDaNoite, periodoDaTarde" />
 
         <TextView
             android:id="@+id/textView"
@@ -175,14 +199,14 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/professor1"
+                android:id="@+id/professor5"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="70dp"
                 android:src="@drawable/avatar_professores" />
 
             <ImageView
-                android:id="@+id/professor2"
+                android:id="@+id/professor6"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="60dp"

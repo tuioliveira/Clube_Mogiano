@@ -29,14 +29,19 @@ class SportsActivity : AppCompatActivity() {
         supportActionBar?.apply {
             title = "Esportes"
         }
-        binding.atletismoButton.setOnClickListener{
+        binding.atletismoButton.setOnClickListener {
             val intent = Intent(this, AtletismoActivity::class.java)
             startActivity(intent)
         }
-        binding.academiaButton.setOnClickListener{
+        binding.academiaButton.setOnClickListener {
             val intent = Intent(this, AcademiaActivity::class.java)
             startActivity(intent)
         }
+        binding.balletButton.setOnClickListener {
+            val intent = Intent(this, BalletActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
