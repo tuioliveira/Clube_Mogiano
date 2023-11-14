@@ -94,8 +94,7 @@
                 android:background="@drawable/background_button_sports"
                 android:text="@string/academia_button"
                 android:textColor="@color/blue_clube"
-                android:textSize="10sp"
-                tools:ignore="SmallSp" />
+                android:textSize="10sp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/atletismo_button"
@@ -107,8 +106,7 @@
                 android:background="@drawable/background_button_sports"
                 android:text="@string/atletismo_button"
                 android:textColor="@color/blue_clube"
-                android:textSize="10sp"
-                tools:ignore="SmallSp" />
+                android:textSize="10sp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/ballet_button"
@@ -120,8 +118,7 @@
                 android:background="@drawable/background_button_sports"
                 android:text="@string/ballet_button"
                 android:textColor="@color/blue_clube"
-                android:textSize="10sp"
-                tools:ignore="SmallSp" />
+                android:textSize="10sp" />
 
         </LinearLayout>
 
@@ -174,8 +171,7 @@
                 android:background="@drawable/background_button_sports"
                 android:text="@string/basquete_button"
                 android:textColor="@color/blue_clube"
-                android:textSize="10sp"
-                tools:ignore="SmallSp" />
+                android:textSize="10sp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/beach_tennis_button"
@@ -187,8 +183,7 @@
                 android:background="@drawable/background_button_sports"
                 android:text="@string/beach_tennis_button"
                 android:textColor="@color/blue_clube"
-                android:textSize="10sp"
-                tools:ignore="SmallSp" />
+                android:textSize="10sp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/fitness_button"
@@ -200,8 +195,7 @@
                 android:background="@drawable/background_button_sports"
                 android:text="@string/fitness_button"
                 android:textColor="@color/blue_clube"
-                android:textSize="10sp"
-                tools:ignore="SmallSp" />
+                android:textSize="10sp" />
 
         </LinearLayout>
 
@@ -254,8 +248,7 @@
                 android:background="@drawable/background_button_sports"
                 android:text="@string/futebol_button"
                 android:textColor="@color/blue_clube"
-                android:textSize="10sp"
-                tools:ignore="SmallSp" />
+                android:textSize="10sp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/ginastica_button"
@@ -267,8 +260,7 @@
                 android:background="@drawable/background_button_sports"
                 android:text="@string/ginastica_button"
                 android:textColor="@color/blue_clube"
-                android:textSize="10sp"
-                tools:ignore="SmallSp" />
+                android:textSize="10sp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/handebol_button"
@@ -280,8 +272,7 @@
                 android:background="@drawable/background_button_sports"
                 android:text="@string/handebol_button"
                 android:textColor="@color/blue_clube"
-                android:textSize="10sp"
-                tools:ignore="SmallSp" />
+                android:textSize="10sp" />
 
         </LinearLayout>
 
@@ -334,8 +325,7 @@
                 android:background="@drawable/background_button_sports"
                 android:text="@string/hidroginastica_button"
                 android:textColor="@color/blue_clube"
-                android:textSize="10sp"
-                tools:ignore="SmallSp" />
+                android:textSize="10sp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/jazz_button"
@@ -347,8 +337,7 @@
                 android:background="@drawable/background_button_sports"
                 android:text="@string/jazz_button"
                 android:textColor="@color/blue_clube"
-                android:textSize="10sp"
-                tools:ignore="SmallSp" />
+                android:textSize="10sp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/jiujitsu_button"
@@ -360,8 +349,7 @@
                 android:background="@drawable/background_button_sports"
                 android:text="@string/jiujitsu_button"
                 android:textColor="@color/blue_clube"
-                android:textSize="10sp"
-                tools:ignore="SmallSp" />
+                android:textSize="10sp" />
 
         </LinearLayout>
 
@@ -414,8 +402,7 @@
                 android:background="@drawable/background_button_sports"
                 android:text="@string/liangong_button"
                 android:textColor="@color/blue_clube"
-                android:textSize="10sp"
-                tools:ignore="SmallSp" />
+                android:textSize="10sp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/natacao_button"
@@ -427,8 +414,7 @@
                 android:background="@drawable/background_button_sports"
                 android:text="@string/natacao_button"
                 android:textColor="@color/blue_clube"
-                android:textSize="10sp"
-                tools:ignore="SmallSp" />
+                android:textSize="10sp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/skate_button"
@@ -440,8 +426,7 @@
                 android:background="@drawable/background_button_sports"
                 android:text="@string/skate_button"
                 android:textColor="@color/blue_clube"
-                android:textSize="10sp"
-                tools:ignore="SmallSp" />
+                android:textSize="10sp" />
 
         </LinearLayout>
 
@@ -494,8 +479,7 @@
                 android:background="@drawable/background_button_sports"
                 android:text="@string/tenniscampo_button"
                 android:textColor="@color/blue_clube"
-                android:textSize="10sp"
-                tools:ignore="SmallSp" />
+                android:textSize="10sp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/tenismesa_button"
@@ -507,8 +491,7 @@
                 android:background="@drawable/background_button_sports"
                 android:text="@string/tenismesa_button"
                 android:textColor="@color/blue_clube"
-                android:textSize="10sp"
-                tools:ignore="SmallSp" />
+                android:textSize="10sp" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/volei_button"
@@ -520,8 +503,7 @@
                 android:background="@drawable/background_button_sports"
                 android:text="@string/volei_button"
                 android:textColor="@color/blue_clube"
-                android:textSize="10sp"
-                tools:ignore="SmallSp" />
+                android:textSize="10sp" />
 
         </LinearLayout>
 
@@ -550,8 +532,7 @@
             android:background="@drawable/background_button_sports"
             android:text="@string/yoga_button"
             android:textColor="@color/blue_clube"
-            android:textSize="10sp"
-            tools:ignore="SmallSp" />
+            android:textSize="10sp" />
 
     </LinearLayout>
 </ScrollView>

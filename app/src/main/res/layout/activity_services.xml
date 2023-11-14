@@ -41,5 +41,33 @@
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RESTAURANTE"
+            android:textAlignment="center"
+            android:textColor="@color/blue_clube"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="260dp"
+            android:src="@drawable/self_service" />
+
+        <TextView
+            android:id="@+id/se_button"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="25dp"
+            android:textAlignment="center"
+            android:background="@drawable/background_button_sports"
+            android:text="@string/self_service"
+            android:textColor="@color/blue_clube"
+            android:textSize="20sp" />
+
     </LinearLayout>
 </ScrollView>

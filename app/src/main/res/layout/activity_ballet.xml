@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical">
 
     <LinearLayout
@@ -35,7 +36,7 @@
                     android:layout_width="1dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/fundo_da_tabela"
+                    android:background="@drawable/selecionador_borda_tabela"
                     android:hyphenationFrequency="normal"
                     android:padding="10dp"
                     android:text="Segunda-Feira"
@@ -47,7 +48,7 @@
                     android:layout_width="1dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/fundo_da_tabela"
+                    android:background="@drawable/selecionador_borda_tabela"
                     android:hyphenationFrequency="normal"
                     android:padding="10dp"
                     android:text="Terça-Feira"
@@ -59,7 +60,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/fundo_da_tabela"
+                    android:background="@drawable/selecionador_borda_tabela"
                     android:hyphenationFrequency="normal"
                     android:padding="10dp"
                     android:text="Quarta-feira"
@@ -71,7 +72,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/fundo_da_tabela"
+                    android:background="@drawable/selecionador_borda_tabela"
                     android:hyphenationFrequency="normal"
                     android:padding="10dp"
                     android:text="Quinta-feira"
@@ -83,7 +84,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/fundo_da_tabela"
+                    android:background="@drawable/selecionador_borda_tabela"
                     android:hyphenationFrequency="normal"
                     android:padding="10dp"
                     android:text="Sexta-feira"
@@ -94,7 +95,9 @@
 
             <TableRow
                 android:id="@+id/periodoDaManha"
-                android:background="@color/gray_table">
+                android:background="@color/gray_table"
+                android:visibility="gone"
+                tools:visibility="visible">
 
                 <TextView
                     android:layout_width="0dp"
@@ -114,7 +117,7 @@
                     android:background="@drawable/fundo_da_tabela"
                     android:hyphenationFrequency="normal"
                     android:padding="10dp"
-                    android:text="09:00 - 05 ANOS [SALA 02]de 5 a 5 anos.\n10:00 - 04 e 05 ANOS [SALA 02] de 4 a 5 anos."
+                    tools:text="09:00 - 05 ANOS [SALA 02]de 5 a 5 anos.\n10:00 - 04 e 05 ANOS [SALA 02] de 4 a 5 anos."
                     android:textSize="10sp" />
 
 
@@ -122,7 +125,9 @@
 
             <TableRow
                 android:id="@+id/periodoDaTarde"
-                android:background="@color/gray_table">
+                android:background="@color/gray_table"
+                android:visibility="gone"
+                tools:visibility="visible">
 
                 <TextView
                     android:layout_width="0dp"
@@ -141,14 +146,16 @@
                     android:layout_weight="1"
                     android:background="@drawable/fundo_da_tabela"
                     android:padding="10dp"
-                    android:text="15:00 - 4º A 6º ANO ESCOLAR [SALA 02] \n15:00 - 4º A 6º ANO ESCOLAR [SALA 02]"
+                    tools:text="15:00 - 4º A 6º ANO ESCOLAR [SALA 02] \n15:00 - 4º A 6º ANO ESCOLAR [SALA 02]"
                     android:textSize="10sp" />
 
             </TableRow>
 
             <TableRow
                 android:id="@+id/periodoDaNoite"
-                android:background="@color/gray_table">
+                android:background="@color/gray_table"
+                android:visibility="gone"
+                tools:visibility="visible">
 
                 <TextView
                     android:layout_width="0dp"
@@ -168,18 +175,20 @@
                     android:background="@drawable/fundo_da_tabela"
                     android:hyphenationFrequency="normal"
                     android:padding="10dp"
-                    android:text="[MATRICULA COM O PROFESSOR] \n18:00 - BALLET AVANÇADO [SALA 02]"
+                    tools:text="[MATRICULA COM O PROFESSOR] \n18:00 - BALLET AVANÇADO [SALA 02]"
                     android:textSize="10sp" />
             </TableRow>
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/grupoTabela"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:constraint_referenced_ids="periodoDaManha, periodoDaNoite, periodoDaTarde" />
 
 
         </TableLayout>
 
-        <androidx.constraintlayout.widget.Group
-            android:id="@+id/grupoTabela"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:constraint_referenced_ids="periodoDaManha, periodoDaNoite, periodoDaTarde" />
+
 
         <TextView
             android:id="@+id/textView"
