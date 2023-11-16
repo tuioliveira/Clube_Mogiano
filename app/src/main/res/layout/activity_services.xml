@@ -19,17 +19,17 @@
             android:elevation="4dp"
             android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
 
-
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:layout_marginTop="30dp"
-            android:text="A área de Esportes do Clube Mogiano oferece alimentação e socialização!"
+            android:text="RESTAURANTE"
             android:textAlignment="center"
             android:textColor="@color/blue_clube"
-            android:textSize="20sp"
+            android:textSize="30sp"
             android:textStyle="bold" />
+
 
         <TextView
             android:layout_width="match_parent"
@@ -37,21 +37,11 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"
-            android:text="Restaurante: Contamos com um restaurante dentro da sede social do nosso clube, onde atendemos nossos associados as quintas-feiras na especial Noite do Boteco, e nos almoços de finais de semana. Lanchonete / Bar : Junto ao restaurante possuimos uma lanchonete, onde servimos algumas refeições como salgados, porções, pratos feitos e também bebidas como refrigerantes, águas, cervejas e drinks."
+            android:text="Restaurante: Contamos com um restaurante dentro da sede social do nosso clube, onde atendemos nossos associados as quintas-feiras na especial Noite do Boteco, e nos almoços de finais de semana e feriados."
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="12sp" />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="RESTAURANTE"
-            android:textAlignment="center"
-            android:textColor="@color/blue_clube"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:layout_marginTop="50dp"/>
 
         <ImageView
             android:layout_width="wrap_content"
@@ -62,12 +52,114 @@
             android:id="@+id/se_button"
             android:layout_width="150dp"
             android:layout_height="30dp"
-            android:layout_marginStart="25dp"
-            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
             android:background="@drawable/background_button_sports"
             android:text="@string/self_service"
+            android:textAlignment="center"
             android:textColor="@color/blue_clube"
             android:textSize="20sp" />
 
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="80dp">
+
+            <TableRow
+                android:layout_height="60dp"
+                android:background="@color/blue_table_top">
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/fundo_da_tabela"
+                    android:hyphenationFrequency="normal"
+                    android:padding="10dp"
+                    android:text="Quinta-feira"
+                    android:textAlignment="center"
+                    android:textColor="@color/orange_edge"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/fundo_da_tabela"
+                    android:hyphenationFrequency="normal"
+                    android:padding="10dp"
+                    android:text="Sábado"
+                    android:textAlignment="center"
+                    android:textColor="@color/orange_edge"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/fundo_da_tabela"
+                    android:hyphenationFrequency="normal"
+                    android:padding="10dp"
+                    android:text="Domingo"
+                    android:textAlignment="center"
+                    android:textColor="@color/orange_edge"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow android:background="@color/gray_table">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/fundo_da_tabela"
+                    android:hyphenationFrequency="normal"
+                    android:padding="10dp"
+                    android:text="-Arroz\n-Feijão\n-Farofa\n-Banana Milanesa\n-Pastel de queijo\n-Torresmo\n-Linguiça\n-Isca de frango"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/fundo_da_tabela"
+                    android:hyphenationFrequency="normal"
+                    android:padding="10dp"
+                    android:text="-Arroz\n-Feijão\n-Risoto de palmito\n-Farofa\n-Banana Milanesa\n-Pastel de queijo\n-Filé Mignon\n-Isca de frango\n-Strogonoff de cogumelos"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/fundo_da_tabela"
+                    android:hyphenationFrequency="normal"
+                    android:padding="10dp"
+                    android:text="-Arroz\n-Feijão\n-Banana Milanesa\n-Pastel de queijo\n-Parmegiana de Peixe\n-Isca de frango\n-Salmão"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+
+            </TableRow>
+
+        </TableLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Lanchonete / Bar : Junto ao restaurante possuimos uma lanchonete, onde servimos algumas refeições como salgados, porções, pratos feitos e também bebidas como refrigerantes, águas, cervejas e drinks."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
     </LinearLayout>
 </ScrollView>

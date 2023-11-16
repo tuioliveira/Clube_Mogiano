@@ -37,19 +37,15 @@
                     android:layout_weight="1"
                     android:background="@drawable/fundo_da_tabela"
                     android:hyphenationFrequency="normal"
-                    android:padding="10dp"
-                    android:text="Segunda-Feira"
-                    android:textColor="@color/orange_edge" />
+                    android:padding="20dp"
+                    android:text="Horários da Academia"
+                    android:textAlignment="center"
+                    android:textColor="@color/orange_edge"
+                    android:textSize="20sp" />
 
-                <TextView
-                    android:layout_width="1dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="@drawable/fundo_da_tabela"
-                    android:hyphenationFrequency="normal"
-                    android:padding="10dp"
-                    android:text="Terça-Feira"
-                    android:textColor="@color/orange_edge" />
+            </TableRow>
+
+            <TableRow android:background="@color/gray_table">
 
                 <TextView
                     android:layout_width="0dp"
@@ -58,8 +54,8 @@
                     android:background="@drawable/fundo_da_tabela"
                     android:hyphenationFrequency="normal"
                     android:padding="10dp"
-                    android:text="Quarta-feira"
-                    android:textColor="@color/orange_edge" />
+                    android:text="Segunda-feira a quinta-feira"
+                    android:textColor="@color/black" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -68,8 +64,13 @@
                     android:background="@drawable/fundo_da_tabela"
                     android:hyphenationFrequency="normal"
                     android:padding="10dp"
-                    android:text="Quinta-feira"
-                    android:textColor="@color/orange_edge" />
+                    android:text="Das 06:00 às 21:30"
+                    android:textColor="@color/black"/>
+
+
+            </TableRow>
+
+            <TableRow android:background="@color/gray_table">
 
                 <TextView
                     android:layout_width="0dp"
@@ -79,7 +80,16 @@
                     android:hyphenationFrequency="normal"
                     android:padding="10dp"
                     android:text="Sexta-feira"
-                    android:textColor="@color/orange_edge" />
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/fundo_da_tabela"
+                    android:padding="10dp"
+                    android:text="Das 06:00 às 21:00"
+                    android:textColor="@color/black"/>
 
             </TableRow>
 
@@ -92,7 +102,7 @@
                     android:background="@drawable/fundo_da_tabela"
                     android:hyphenationFrequency="normal"
                     android:padding="10dp"
-                    android:text="Período da manhã"
+                    android:text="Sábado"
                     android:textColor="@color/black" />
 
                 <TextView
@@ -102,10 +112,8 @@
                     android:background="@drawable/fundo_da_tabela"
                     android:hyphenationFrequency="normal"
                     android:padding="10dp"
-                    android:text=""
-                    android:textSize="10sp" />
-
-
+                    android:text="Das 07:00 às 17:00"
+                    android:textColor="@color/black"/>
             </TableRow>
 
             <TableRow android:background="@color/gray_table">
@@ -117,30 +125,7 @@
                     android:background="@drawable/fundo_da_tabela"
                     android:hyphenationFrequency="normal"
                     android:padding="10dp"
-                    android:text="Período da Tarde"
-                    android:textColor="@color/black" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="@drawable/fundo_da_tabela"
-                    android:padding="10dp"
-                    android:text=""
-                    android:textSize="10sp" />
-
-            </TableRow>
-
-            <TableRow android:background="@color/gray_table">
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="@drawable/fundo_da_tabela"
-                    android:hyphenationFrequency="normal"
-                    android:padding="10dp"
-                    android:text="Período da Noite"
+                    android:text="Domingo"
                     android:textColor="@color/black" />
 
                 <TextView
@@ -150,8 +135,8 @@
                     android:background="@drawable/fundo_da_tabela"
                     android:hyphenationFrequency="normal"
                     android:padding="10dp"
-                    android:text=""
-                    android:textSize="10sp" />
+                    android:text="Das 08:00 às 12:00"
+                    android:textColor="@color/black" />
             </TableRow>
 
 
