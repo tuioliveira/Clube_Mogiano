@@ -152,6 +152,16 @@
 
 
         <TextView
+            android:id="@+id/lanchonete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LANCHONETE"
+            android:textAlignment="center"
+            android:textColor="@color/blue_clube"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -160,6 +170,66 @@
             android:text="Lanchonete / Bar : Junto ao restaurante possuimos uma lanchonete, onde servimos algumas refeições como salgados, porções, pratos feitos e também bebidas como refrigerantes, águas, cervejas e drinks."
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="12sp" />
+            android:textSize="12sp"
+            android:layout_marginBottom="20dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="260dp"
+            android:src="@drawable/lanchonete" />
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="80dp">
+
+        <TableRow
+            android:layout_height="60dp"
+            android:background="@color/blue_table_top">
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/fundo_da_tabela"
+                android:hyphenationFrequency="normal"
+                android:padding="20dp"
+                android:text="CARDÁPIO"
+                android:textAlignment="center"
+                android:textColor="@color/orange_edge"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+        <TableRow android:background="@color/gray_table">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/fundo_da_tabela"
+                android:hyphenationFrequency="normal"
+                android:padding="10dp"
+                android:text="BEBIDAS  \n\nRefrigerante - 6,00\nH2O - 7,00\nEnergético - 10,00\nSuco Natural - 6,00\nSuco Garrafa 1L - 12,00"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/fundo_da_tabela"
+                android:hyphenationFrequency="normal"
+                android:padding="10dp"
+                android:text="PORÇÕES  \n\nIsca de Frango - 40,00\nIsca de Tilápia - 55,00\nBatata Frita - 30,00\nMini Salgados - 40,00\nMini Pastel - 35,00"
+                android:textColor="@color/black"/>
+
+
+        </TableRow>
+        </TableLayout>
+
     </LinearLayout>
 </ScrollView>
