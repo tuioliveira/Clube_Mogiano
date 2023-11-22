@@ -44,6 +44,9 @@
         <activity
             android:name=".sports.BalletActivity"
             android:exported="true" />
+        <activity
+            android:name=".associados.AssociadosActivity"
+            android:exported="true" />
     </application>
 
 </manifest>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange_edge">
+
+    <ImageButton
+        android:id="@+id/fechar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="fitCenter"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/orange_edge"
+        android:src="@drawable/fechar_button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <View
+        android:id="@+id/portal_associado"
+        android:layout_width="355dp"
+        android:layout_height="400dp"
+        android:background="@drawable/background_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498" />
+
+    <TextView
+        android:id="@+id/associado_texto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Portal do Associado"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/portal_associado"
+        app:layout_constraintStart_toStartOf="@+id/portal_associado"
+        app:layout_constraintTop_toTopOf="@+id/portal_associado"
+        app:layout_constraintVertical_bias="0.063" />
+
+    <TextView
+        android:id="@+id/digite_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Digite seu Login"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/portal_associado"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/portal_associado"
+        app:layout_constraintTop_toBottomOf="@+id/associado_texto"
+        app:layout_constraintVertical_bias="0.049" />
+
+    <EditText
+        android:id="@+id/login"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:background="@drawable/background_button"
+        android:inputType="text"
+        android:hint="Login"
+        android:paddingHorizontal="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/portal_associado"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/portal_associado"
+        app:layout_constraintTop_toBottomOf="@+id/digite_login"
+        app:layout_constraintVertical_bias="0.097" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:background="@drawable/background_button"
+        android:inputType="numberPassword"
+        android:hint="Senha"
+        android:paddingHorizontal="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/portal_associado"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/portal_associado"
+        app:layout_constraintTop_toBottomOf="@+id/login"
+        app:layout_constraintVertical_bias="0.073" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Esqueceu sua senha? Clique aqui"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/entrar"
+        app:layout_constraintEnd_toEndOf="@+id/portal_associado"
+        app:layout_constraintStart_toStartOf="@+id/portal_associado"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintVertical_bias="0.666" />
+
+    <Button
+        android:id="@+id/entrar"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/background_button_comunicados"
+        android:text="ENTRAR"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/portal_associado"
+        app:layout_constraintEnd_toEndOf="@+id/portal_associado"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/portal_associado"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.958" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

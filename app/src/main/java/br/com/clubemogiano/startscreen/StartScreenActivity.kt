@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import br.com.clubemogiano.R
 import br.com.clubemogiano.databinding.ActivityStartScreenBinding
 import android.content.Intent
+import br.com.clubemogiano.associados.AssociadosActivity
 import br.com.clubemogiano.services.ServicesActivity
 import br.com.clubemogiano.social.SocialActivity
 import br.com.clubemogiano.sports.SportsActivity
@@ -41,6 +42,10 @@ class StartScreenActivity : AppCompatActivity() {
         }
         binding.servicesButton.setOnClickListener{
             val intent = Intent(this, ServicesActivity::class.java)
+            startActivity(intent)
+        }
+        binding.associadoButton.setOnClickListener{
+            val intent = Intent (this, AssociadosActivity::class.java)
             startActivity(intent)
         }
     }
